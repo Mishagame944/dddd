@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f6ff;
+  color: #222;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#nameInput {
+  width: 220px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.team-buttons, .action {
+  display: flex;
+  gap: 8px;
+}
+
+.team-select,
+.action {
+  border: 1px solid #3373e8;
+  background: #4b8aff;
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.team-select.active,
+.team-select:hover,
+.action:hover {
+  background: #2a61dc;
+}
+
+.action.danger {
+  border-color: #d92f33;
+  background: #ed555f;
+}
+
+.action.danger:hover {
+  background: #c82226;
+}
+
+.teams {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.team {
+  width: 250px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+}
+
+.team h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.team ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.team li {
+  border-bottom: 1px solid #eee;
+  padding: 6px 3px;
+}
+
+.team li:last-child {
+  border-bottom: none;
+}
+
+.team li .remove {
+  float: right;
+  color: #d92f33;
+  cursor: pointer;
+}

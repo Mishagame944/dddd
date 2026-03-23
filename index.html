@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stule.css">
+    <title>Команды</title>
+</head>
+
+<body>
+
+    <h1>Список военкомата</h1>
+
+    <div class="controls">
+        <input type="text" id="nameInput" placeholder="Введите имя" />
+        <div class="team-buttons">
+            <button id="team1Btn" class="team-select active" data-team="team1">Годен</button>
+            <button id="team2Btn" class="team-select" data-team="team2">Не годен</button>
+        </div>
+        <button id="saveBtn" class="action">Сохранить</button>
+        <button id="clearBtn" class="action danger">Очистить всё</button>
+    </div>
+
+    <div class="teams">
+        <div class="team" id="team1Panel">
+            <h2>Годен</h2>
+            <ul id="team1List"></ul>
+        </div>
+        <div class="team" id="team2Panel">
+            <h2>Не годен</h2>
+            <ul id="team2List"></ul>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
